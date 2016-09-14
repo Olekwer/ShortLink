@@ -1,0 +1,10 @@
+<div class="jumbotron">
+    <h1>Добро пожаловать!</h1>
+    <p class="lead">Вы можете просмотреть список ссылок созданных этим сервисом. </p>
+    <p ng-if="!islogin"><a ng-href="#/auth">Чтобы создатьсвою ссылку необходимо авторизироваться</a></p>
+    <p><a class="btn btn-lg btn-success" href="#/createLink" role="button" ng-if="islogin">Создать ссылку</a></p>
+</div>
+
+<div class="row marketing">
+   <home-dir></home-dir>
+</div>

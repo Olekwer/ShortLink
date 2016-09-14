@@ -1,0 +1,31 @@
+<style>
+    .mor{
+        margin-left: 9px;
+    }
+</style>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Ссылка</th>
+            <th>Описание</th>
+            <th>Тег</th>
+            <th>Количество переходов</th>
+            <th>Сокращенная ссылка</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="link in links">
+            <td>{{link.linkname}}</td>
+            <td>{{link.description}}</td>
+            <td>
+                <span ng-repeat="tag in link.tags" ><a ng-click="clickTag(tag)">{{tag}}</a> </span>
+            </td>
+            <td>{{link.hit}}</td>
+            <td><a ng-href="http://localhost:8080/follow/to/{{link.shortlink}}">http://localhost:8080/follow/to/{{link.shortlink}}</a></td>
+            <td><a href="#/update/{{link.shortlink}}" class="btn btn-primary btn-sm">Изменить</a></td>
+            <td><a href="#/info/{{link.shortlink}}" class="btn btn-primary btn-sm">Информация</a></td>
+        </tr>
+    </tbody>
+
+</table>

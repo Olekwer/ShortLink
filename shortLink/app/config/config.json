@@ -1,0 +1,25 @@
+{
+  "port": 8080,
+  "mongoose": {
+    "uri": "mongodb://localhost/short",
+    "options":{
+      "server":{
+        "socketOptions":{
+          "keepAlive":1
+        }
+      }
+    }
+  },
+  "session":{
+    "secret": "KillBillVolume",
+    "key": "sid",
+    "cookie":{
+      "path":"/",
+      "httpOnly": true,
+      "maxAge": null
+    }
+  },
+  "webtoken":{
+    "secret":"MamaMylaRamu"
+  }
+}

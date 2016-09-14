@@ -1,0 +1,32 @@
+<h2>Регистрация</h2>
+<form class="form-horizontal">
+
+    <div class="form-group">
+        <label class="control-label col-xs-3" for="firstName">Имя:</label>
+        <div class="col-xs-9">
+            <input type="text" class="form-control" id="firstName" placeholder="Введите имя" ng-model="user.name">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-3" for="userName">Логин:</label>
+        <div class="col-xs-9">
+            <input type="text" class="form-control" id="userName" placeholder="Введите логин" ng-model="user.login">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-3" for="inputPassword" >Пароль:</label>
+        <div class="col-xs-9">
+            <input type="password" class="form-control" id="inputPassword" placeholder="Введите пароль" ng-model="user.password">
+        </div>
+    </div>
+
+    <br />
+    <div class="form-group">
+        <div class="col-xs-offset-3 col-xs-9">
+            <input type="submit" class="btn btn-primary" value="Регистрация" ng-click="regFunc()">
+        </div>
+    </div>
+</form>
+<p class="bg-success" ng-show="suc">Вы успешно зарегистрировались</p>
+<p class="bg-danger" ng-show="er">Пользователь не добален. Вероятно не все поля заполнены или пользователь с таким логином существует</p>

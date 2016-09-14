@@ -1,0 +1,24 @@
+<form>
+
+    <div class="form-group">
+        <label for="link_id" class="control-label">Введите ссылку</label>
+        <input type="text" class="form-control" id="link_id" name="link" placeholder="ссылка" required url ng-model="link.linkName">
+    </div>
+
+    <div class="form-group">
+        <label for="description_id" class="control-label">Краткое описание</label>
+        <input type="text" class="form-control" id="description_id" name="description" placeholder="Краткое описание" ng-model="link.description">
+    </div>
+
+    <div class="form-group">
+        <label for="teg_id" class="control-label">Теги</label>
+        <input type="text" class="form-control" id="teg_id" name="teg" placeholder="введитете теги через ';'" ng-model="link.tags">
+    </div>
+
+
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary" ng-click="createLink()">Buy!</button>
+    </div>
+
+</form>

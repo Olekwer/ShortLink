@@ -1,0 +1,19 @@
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        <th>Ссылка</th>
+        <th>Тег</th>
+        <th>Сокращенная ссылка</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="link in links">
+        <td>{{link.linkname}}</td>
+        <td>
+            <span ng-repeat="tag in link.tags" ><a ng-click="clickTag(tag)">{{tag}}</a> </span>
+        </td>
+        <td><a ng-href="http://localhost:8080/follow/to/{{link.shortlink}}">http://localhost:8080/follow/to/{{link.shortlink}}</a></td>
+    </tr>
+    </tbody>
+
+</table>

@@ -1,0 +1,9 @@
+<form class="form-signin">
+    <h2 class="form-signin-heading">Авторизация</h2>
+    <label for="inputLogin" class="sr-only">Email address</label>
+    <input type="text" id="inputLogin" class="form-control" placeholder="Login" required autofocus ng-model="user.login">
+    <label for="inputPassword" class="sr-only">Password</label>
+    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required ng-model="user.password">
+
+    <button class="btn btn-lg btn-primary btn-block" type="submit" ng-click="authFunc()">Войти</button>
+</form>

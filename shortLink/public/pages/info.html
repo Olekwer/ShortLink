@@ -1,0 +1,11 @@
+<div class="inner cover">
+    <h1 class="cover-heading">Информация о ссылке</h1>
+    <p> Название ссылки: <b>{{link.linkname}}</b></p>
+    <p> Сокращенная ссылка: <b> <a ng-href="http://localhost:8080/follow/to/{{link.shortlink}}">localhost:8080/follow/to/{{link.shortlink}}</a></b></p>
+    <p> Описание: <b>{{link.description}}</b></p>
+    <p> Теги: <b ng-repeat="tag in link.tags"> <a ng-click="clickTag(tag)">{{tag}}</a> </b></p>
+    <p> Количество переходов: <b>{{link.hit}}</b></p>
+    <p class="lead">
+        <a href="#/update/{{link.shortlink}}" class="btn btn-lg btn-default">Редактировать</a>
+    </p>
+</div>
